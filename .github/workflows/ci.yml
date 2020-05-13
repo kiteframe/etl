@@ -32,6 +32,18 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
+
+    - name: Run PHPStan
+      run: vendor/bin/phpstan analyze --no-progress
+
+    - name: Run Deptrac
+      run: vendor/bin/deptrac
+
+    - name: Run PHP CS Fixer
+      run: vendor/bin/php-cs-fixer fix -v --dry-run --using-cache=no
+
+    - name: Run Sensio Security Checker
+      run: vendor/bin/security-checker security:check
     
     - name: Run PHPUnit
       run: vendor/bin/phpunit
