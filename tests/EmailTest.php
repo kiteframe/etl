@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Smudger\REPO_NAME\Tests;
+namespace kiteframe\etl\Tests;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
-use Smudger\REPO_NAME\Domain\Email;
+use kiteframe\etl\Domain\Email;
 
 final class EmailTest extends TestCase
 {

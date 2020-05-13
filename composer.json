@@ -1,12 +1,12 @@
 {
-  "name": "smudger/REPO_NAME",
-  "description": "A starter template for new PHP projects",
+  "name": "kiteframe/etl",
+  "description": "A package for building ETL processes in PHP",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "smudger",
-      "email": "15144861+smudger@users.noreply.github.com"
+      "name": "kiteframe",
+      "email": "contact@kiteframe.co.uk"
     }
   ],
   "require": {
@@ -23,12 +23,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Smudger\\REPO_NAME\\": "src/"
+      "kiteframe\\etl\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Smudger\\REPO_NAME\\Tests\\": "tests/"
+      "kiteframe\\etl\\Tests\\": "tests/"
     }
   },
   "config": {

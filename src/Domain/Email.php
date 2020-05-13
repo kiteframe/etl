@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Smudger\REPO_NAME\Domain;
+namespace kiteframe\etl\Domain;
 
 use InvalidArgumentException;
 
