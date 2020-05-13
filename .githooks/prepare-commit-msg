@@ -1,0 +1,8 @@
+#!/bin/bash
+set -u
+
+ISSUE_TAG=$(git rev-parse --abbrev-ref HEAD 2> /dev/null | grep -oE "#[0-9]+")
+
+[[ ! -z "$ISSUE_TAG" ]] && echo "[$ISSUE_TAG] $(cat $1)" > $1
+
+exit 0

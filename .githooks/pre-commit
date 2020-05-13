@@ -1,0 +1,14 @@
+#!/bin/bash
+set -u
+
+BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)"
+
+VALID_BRANCH_REGEX="^(feature|fix)\/#[0-9]+-[a-zA-Z0-9-]+$"
+
+if [[ ! $BRANCH_NAME =~ $VALID_BRANCH_REGEX ]]
+then
+    echo -e "Your branch name doesn't match the accepted format: '(feature|fix)/#<Issue Number>-description-of-branch'"
+    exit 1
+fi
+
+exit 0

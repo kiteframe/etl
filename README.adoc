@@ -1,0 +1,43 @@
+= PHP Project Template image:https://circleci.com/gh/smudger/template-php.svg?style=svg["smudger", link="https://circleci.com/gh/smudger/template-php"]
+
+A starter template for scaffolding new PHP projects quickly. Includes configuration for the following tooling.
+
+* PHP CS Fixer
+* PHPUnit
+* PHPStan
+* Deptrac
+* Security Checker
+* Circle CI
+* Git Hooks
+
+== Getting Started
+
+To quickly scaffold a new PHP project from this template, simply find and replace `REPO_NAME` with the name of the new project and link your repository to Circle CI.
+
+==== Project Dependencies
+
+You will need to install the project dependencies by running the following command.
+
+[source,sh]
+docker-compose run app composer install
+
+==== Running Tests
+
+The tests can be run using the following command.
+
+[source,sh]
+docker-compose run app ./vendor/bin/phpunit
+
+==== Git Hooks
+
+This project uses git hooks to enforce a consistent branch and commit naming convention. To enable these hooks during local development you will need to run the following command.
+
+[source,sh]
+git config core.hooksPath ./.githooks
+
+Branch names should obey the following regex.
+
+[source,sh]
+^(feature|fix)\/#[0-9]+-[a-zA-Z0-9-]+$
+
+Commits will then automatically be prepended with the issue number specified after the `#` in the branch name.

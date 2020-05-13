@@ -1,0 +1,40 @@
+{
+  "name": "smudger/REPO_NAME",
+  "description": "A starter template for new PHP projects",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "smudger",
+      "email": "15144861+smudger@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "phpstan/phpstan": "^0.12.18",
+    "phpstan/phpstan-phpunit": "^0.12.6",
+    "phpstan/phpstan-strict-rules": "^0.12.2",
+    "phpunit/phpunit": "^9",
+    "sensiolabs-de/deptrac-shim": "^0.6.0",
+    "sensiolabs/security-checker": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Smudger\\REPO_NAME\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Smudger\\REPO_NAME\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "prefer-stable": true
+}

@@ -1,0 +1,11 @@
+#!/bin/bash
+set -u
+
+COMMIT_MESSAGE=$(<$1)
+
+VALID_COMMIT_REGEX="^\[#[0-9]+\] "
+
+if [[ ! $COMMIT_MESSAGE =~ $VALID_COMMIT_REGEX ]]; then
+    echo -e "Your commit message doesn't match the accepted format: '[#<Issue Number>] <Description of commit>'"
+    exit 1
+fi
