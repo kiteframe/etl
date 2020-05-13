@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace kiteframe\etl\Tests;
 
 use InvalidArgumentException;
+use kiteframe\etl\Domain\Email;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
-use kiteframe\etl\Domain\Email;
 
 final class EmailTest extends TestCase
 {
