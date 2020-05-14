@@ -1,4 +1,4 @@
-name: PHP Composer
+name: CI
 
 on:
   push:
@@ -44,6 +44,6 @@ jobs:
 
     - name: Run Sensio Security Checker
       run: vendor/bin/security-checker security:check
-    
+
     - name: Run PHPUnit
       run: vendor/bin/phpunit
