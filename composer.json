@@ -21,6 +21,9 @@
     "sensiolabs-de/deptrac-shim": "^0.6.0",
     "sensiolabs/security-checker": "^6.0"
   },
+  "scripts": {
+    "test": "phpunit"
+  },
   "autoload": {
     "psr-4": {
       "kiteframe\\etl\\": "src/"

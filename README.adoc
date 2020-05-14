@@ -1,34 +1,22 @@
-= PHP Project Template image:https://github.com/kiteframe/etl/workflows/CI/badge.svg["CI"]
+= ETL image:https://github.com/kiteframe/etl/workflows/CI/badge.svg["CI"]
 
-A starter template for scaffolding new PHP projects quickly. Includes configuration for the following tooling.
+ETL package written in PHP.
 
-* PHP CS Fixer
-* PHPUnit
-* PHPStan
-* Deptrac
-* Security Checker
-* Circle CI
-* Git Hooks
-
-== Getting Started
-
-To quickly scaffold a new PHP project from this template, simply find and replace `REPO_NAME` with the name of the new project and link your repository to Circle CI.
-
-==== Project Dependencies
+=== Getting Started
 
 You will need to install the project dependencies by running the following command.
 
 [source,sh]
 docker-compose run app composer install
 
-==== Running Tests
+=== Running Tests
 
 The tests can be run using the following command.
 
 [source,sh]
-docker-compose run app ./vendor/bin/phpunit
+docker-compose run app composer test
 
-==== Git Hooks
+=== Git Hooks
 
 This project uses git hooks to enforce a consistent branch and commit naming convention. To enable these hooks during local development you will need to run the following command.
 
