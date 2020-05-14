@@ -1,4 +1,4 @@
-= PHP Project Template image:https://circleci.com/gh/smudger/template-php.svg?style=svg["smudger", link="https://circleci.com/gh/smudger/template-php"]
+= PHP Project Template image:https://github.com/kiteframe/etl/workflows/CI/badge.svg["CI"]
 
 A starter template for scaffolding new PHP projects quickly. Includes configuration for the following tooling.
 
